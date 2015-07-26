@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru-RU">
 <head>
-<meta charset="UTF-8">
-<title>Мой сайт</title>
+    <meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My Portfolio">
+    <meta name="kaywords" content="frontend, java script, portfolio">
+    <link rel="stylesheet" href="css/bundle.css">
+    <title>Первое выпускное задание LoftSchool</title>
+
+    <script src="js/modernizr.js"></script>
 </head>
 <body>
-	<script src="bower/jquery/dist/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+
+<div id="all">
+
+    <ul id="main">
+        <header>
+            <h4>Хедер</h4>
+            <ul id="socialButtons">
+                <li id="git">git</li>
+                <li id="fb">fb</li>
+                <li id="tw">tw</li>
+                <li id="vk">vk</li>
+            </ul>
+            
+        </header>
+        <div class="gradient"></div>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li>Обо мне</li>
+                    <li>Мои работы</li>
+                    <li>Связаться со мной</li>
+                </ul>
+            </nav>
+            <section id="contacts">
+                <h3>Контакты</h3>
+                <ul>
+                    <li>Почта</li>
+                    <li>Телефон</li>
+                    <li>Скайп</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main>
+            <article id="mainInformation"><h1>Основная информация</h1></article>
+            <article id="experience">
+                <h1>Опыт работы</h1>
+                <section> ООО "Технософт" </section>
+                <section> Фрилансер </section>
+            </article>
+            <article id="education">
+                <h1>Образование</h1>
+                <section> LoftShool </section>
+                <section> Незаконченное высшее, АЛТГТУ, специальность ИВТ  </section>
+            </article>
+        </main>
+
+        <footer>
+            <div class="gradient"></div>
+            <h4>футер</h4>
+        </footer>
+
+    </div>
+</div>
+
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/plugins.js"></script>
 </body>
 </html>
+<!--
+Задачи:
+1. склеить css
+2. Разные тайтлы на каждую страницу
+3. склеить js Кроме модернайзера
+4. грузить с google jquery сделать команду ||
+-->

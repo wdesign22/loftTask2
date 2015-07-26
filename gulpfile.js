@@ -1,5 +1,6 @@
 /* */
 var gulp = require("gulp");
+var concatCss = require('gulp-concat-css');
 var browserSync = require('browser-sync');
 
 gulp.task('server', function () {
@@ -19,4 +20,15 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['server', 'watch']);
+
+gulp.task('concatCss', function () {
+	return gulp.src([
+		"src/bower/normalize.css/normalize.css",
+		"src/css/main.css",
+		"src/css/buttons.css"
+		])
+		.pipe(concatCss("src/css/bundle.css"))
+		.pipe(gulp.dest('./'));
+});
+
 
