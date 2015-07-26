@@ -1,0 +1,8 @@
+{
+  "name": "eugene.one",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "^2.8.tou0",
+    "gulp": "^3.9.0"
+  }
+}
