@@ -11,6 +11,7 @@ body {
     background-repeat: repeat;
 }
 
+
 .gradient {
     height: 3px;
     background: #e7eff3; /* Old browsers */
@@ -21,6 +22,14 @@ body {
     background: -ms-linear-gradient(left, #e7eff3 0%, #216a7d 50%, #e7eff3 100%); /* IE10+ */
     background: linear-gradient(to right, #e7eff3 0%, #216a7d 50%, #e7eff3 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff3', endColorstr='#e7eff3', GradientType=1); /* IE6-9 */
+}
+
+
+#beforeFooter {
+    min-height: 100%;
+
+    margin: 0 0 -81px;
+
 }
 
 /*Обертка, очистка float*/
@@ -34,8 +43,58 @@ body {
 }
 /*header*/
 
+#header{
+    height: 70px;
+
+}
+#head_up {
+    margin-top:30px;
+}
 ul#socialButtons li {
     display:inline-block;
     background: slategray;
     /* font-size:0px; */
+}
+
+/* center */
+#center{
+    width:970px;
+    margin: 0 auto;
+    padding:0 0 81px;
+}
+
+#asideBar{
+    float:left;
+    width:300px;
+}
+
+#main{
+    float:right;
+    width:500px;
+}
+
+
+/* footer  */
+
+#footer {
+
+    height: 81px;
+    background-color: #eff3f7;
+}
+
+#footer_in {
+    height: 78px;
+    width: 961px;
+    margin: auto;
+    background: url("../img/lock.png") no-repeat 35px 24px;
+}
+
+#copyright {
+    padding-top: 28px;
+    padding-left: 289px;
+
+    font: 12px Monospace;
+    font-family: fira_sansbook, arial;
+    color: #767d84;
+
 }
