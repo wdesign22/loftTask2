@@ -11,6 +11,10 @@ body {
     background-repeat: repeat;
 }
 
+.wrapperHeader{
+    width: 100%;
+    background-color: #eff3f7;
+}
 
 .gradient {
     height: 3px;
@@ -24,12 +28,9 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff3', endColorstr='#e7eff3', GradientType=1); /* IE6-9 */
 }
 
-
 #beforeFooter {
     min-height: 100%;
-
     margin: 0 0 -81px;
-
 }
 
 /*Обертка, очистка float*/
@@ -41,38 +42,123 @@ body {
 .clearFix:after {
     clear: both;
 }
+
 /*header*/
 
-#header{
-    height: 70px;
+#header {
+    height: 116px;
+    min-width: 970px;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
 
 }
-#head_up {
-    margin-top:30px;
+
+.logo > a {
+    display: block;
 }
-ul#socialButtons li {
-    display:inline-block;
-    background: slategray;
-    /* font-size:0px; */
+
+.logo {
+    position: absolute;
+    left: 0px;
+}
+
+.socialButtons {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+.socialItem {
+    display: inline-block;
+    margin-left: 19px;
+    width: 47px;
+    height: 47px;
+    font-size:0px;
+}
+
+.socialItem .socialLink {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/socials.png");
+    background-repeat: no-repeat;
+    text-indent:-9999px;
+}
+
+ul.socialButtons   {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    height:47px;
+}
+/* ну почему он на несколько пикселов вверх?? */
+
+.logoText{
+    position: absolute;
+    text-indent:-9999px;
+}
+
+.socialButtons .socialItem:first-child{
+    margin-left: 0;
+}
+
+.socialLink.vk {
+    background-position: -2px -3px;
+    padding-left: 0px;
+}
+.socialLink.vk:hover  {
+    background-position: -2px -65px;
+
+}
+
+
+.socialLink.fb {
+    background-position: -140px -3px;
+}
+
+.socialLink.fb:hover  {
+    background-position: -140px -65px;
+}
+
+.socialLink.tw {
+    background-position: -71px -3px;
+}
+.socialLink.tw:hover  {
+    background-position: -71px -65px;
+}
+
+
+.socialLink.git {
+    background-position: -209px -3px;
+}
+.socialLink.git:hover  {
+    background-position: -209px -65px;
+}
+
+
+.headerSpace {
+    top: 35px;
 }
 
 /* center */
-#center{
-    width:970px;
+.center {
+    width: 970px;
     margin: 0 auto;
-    padding:0 0 81px;
+    padding: 0 0 81px;
 }
 
-#asideBar{
-    float:left;
-    width:300px;
+#asideBar {
+    float: left;
+    width: 300px;
 }
 
-#main{
-    float:right;
-    width:500px;
+#main {
+    float: right;
+    width: 500px;
 }
-
 
 /* footer  */
 

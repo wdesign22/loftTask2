@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="My Portfolio">
-    <meta name="kaywords" content="frontend, java script, portfolio">
-    <link rel="stylesheet" href="css/bundle.css">
+    <meta name="kaywords" content="frontend, javascript, portfolio, solution">
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--<link rel="stylesheet" href="css/bundle.css">-->
     <title>Первое выпускное задание LoftSchool</title>
 
     <script src="js/modernizr.js"></script>
@@ -19,19 +22,28 @@
 
 
 <div id="beforeFooter">
-    <header id="header">
-        <ul id="socialButtons">
-            <li id="git">git</li>
-            <li id="fb">fb</li>
-            <li id="tw">tw</li>
-            <li id="vk">vk</li>
-        </ul>
-
-
-    </header>
+    <div class="wrapperHeader">
+        <header id="header">
+            <div class="logo headerSpace">
+                <a href="eugene.one">
+                    <img src="img/logo.png">
+                    <span class="logoText">Portfolio Eugene Borovoy</span>
+                </a>
+            </div>
+            <ul class="socialButtons headerSpace">
+                <li class="socialItem"><a href="http://vk.com" class="socialLink vk" target="_blank">vk.com</a></li>
+                <li class="socialItem"><a href="https://twitter.com/" class="socialLink tw"
+                                          target="_blank">twitter.com</a></li>
+                <li class="socialItem"><a href="https://www.facebook.com/" class="socialLink fb" target="_blank">www.facebook.com</a>
+                </li>
+                <li class="socialItem"><a href="https://github.com/wdesign22" class="socialLink git" target="_blank">github.com</a>
+                </li>
+            </ul>
+        </header>
+    </div>
     <div class="gradient"></div>
 
-    <div id="center" class="clearFix">
+    <div class="clearFix center ">
         <aside id="asideBar">
             <nav>
                 <ul>
@@ -40,15 +52,16 @@
                     <li>Связаться со мной</li>
                 </ul>
             </nav>
-            <section id="contacts">
+            <adress id="contacts">
                 <h3>Контакты</h3>
                 <ul>
                     <li>Почта</li>
                     <li>Телефон</li>
                     <li>Скайп</li>
                 </ul>
-            </section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum nam quaerat sint tempore? Consequatur </p>
+            </adress>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab earum nam quaerat sint tempore?
+                Consequatur </p>
         </aside>
 
         <main id="main">
@@ -68,9 +81,14 @@
         </main>
     </div>
 </div>
+
 <footer id="footer">
     <div class="gradient"></div>
-    <h4>футер</h4>
+    <div id="copyright">
+        &copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.
+    </div>
+
+
 </footer>
 
 

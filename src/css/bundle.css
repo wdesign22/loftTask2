@@ -474,7 +474,6 @@ body {
 }
 
 #beforeFooter {
-  min-height: 100%;
   margin: 0 0 -81px;
 }
 
@@ -494,21 +493,35 @@ body {
 
 #header {
   height: 70px;
+  min-width: 970px;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
 }
 
-#head_up {
-  margin-top: 30px;
+.logo {
+  position: absolute;
+  left: 0px;
 }
 
-ul#socialButtons li {
+ul.socialButtons {
+  position: absolute;
+  right: 0;
+}
+
+ul.socialButtons li {
   display: inline-block;
   background: slategray;
   /* font-size:0px; */
 }
 
+.headerSpace {
+  top: 39px;
+}
+
 /* center */
 
-#center {
+.center {
   width: 970px;
   margin: 0 auto;
   padding: 0 0 81px;
