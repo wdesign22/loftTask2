@@ -11,11 +11,6 @@ body {
     background-repeat: repeat;
 }
 
-.wrapperHeader{
-    width: 100%;
-    background-color: #eff3f7;
-}
-
 .gradient {
     height: 3px;
     background: #e7eff3; /* Old browsers */
@@ -43,15 +38,19 @@ body {
     clear: both;
 }
 
-/*header*/
+/* header  header header header header header header header header header header */
 
+.wrapperHeader {
+    width: 100%;
+    background-color: #eff3f7;
+    margin-bottom: 39px;
+}
 #header {
     height: 116px;
     min-width: 970px;
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
-
 }
 
 .logo > a {
@@ -70,13 +69,12 @@ body {
     padding: 0;
 }
 
-
 .socialItem {
     display: inline-block;
     margin-left: 19px;
     width: 47px;
     height: 47px;
-    font-size:0px;
+    font-size: 0px;
 }
 
 .socialItem .socialLink {
@@ -85,23 +83,23 @@ body {
     width: 100%;
     background-image: url("../img/socials.png");
     background-repeat: no-repeat;
-    text-indent:-9999px;
+    text-indent: -9999px;
 }
 
-ul.socialButtons   {
+ul.socialButtons {
     line-height: 0;
     margin: 0;
     padding: 0;
-    height:47px;
+    height: 47px;
 }
+
 /* ну почему он на несколько пикселов вверх?? */
-
-.logoText{
+.logoText {
     position: absolute;
-    text-indent:-9999px;
+    text-indent: -9999px;
 }
 
-.socialButtons .socialItem:first-child{
+.socialButtons .socialItem:first-child {
     margin-left: 0;
 }
 
@@ -109,58 +107,85 @@ ul.socialButtons   {
     background-position: -2px -3px;
     padding-left: 0px;
 }
-.socialLink.vk:hover  {
+
+.socialLink.vk:hover {
     background-position: -2px -65px;
-
 }
-
 
 .socialLink.fb {
     background-position: -140px -3px;
 }
 
-.socialLink.fb:hover  {
+.socialLink.fb:hover {
     background-position: -140px -65px;
 }
 
 .socialLink.tw {
     background-position: -71px -3px;
 }
-.socialLink.tw:hover  {
+
+.socialLink.tw:hover {
     background-position: -71px -65px;
 }
-
 
 .socialLink.git {
     background-position: -209px -3px;
 }
-.socialLink.git:hover  {
+
+.socialLink.git:hover {
     background-position: -209px -65px;
 }
-
 
 .headerSpace {
     top: 35px;
 }
 
-/* center */
+/*   center center center center center center center center center   center center center center */
+
 .center {
     width: 970px;
     margin: 0 auto;
     padding: 0 0 81px;
 }
 
-#asideBar {
+.asideBar {
     float: left;
-    width: 300px;
+    width: 250px;
+
+
+}
+
+.navigation{
+    margin-bottom: 26px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 #main {
     float: right;
     width: 500px;
 }
+.menu-ul{
+    list-style:none;
+    background-color: #eff3f7;
+}
 
-/* footer  */
+.menu-li{
+    height: 76px;
+
+}
+.menu-a{
+    font-family: 'fira_sansbook';
+    display:block;
+    width:100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+
+/* footer   footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  */
 
 #footer {
 
