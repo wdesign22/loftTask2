@@ -1,14 +1,18 @@
 /* main.css */
 
 /*  global  */
-body, html {
+html {
     background-color: white;
     height: 100%;
+    background-image: url(../img/comppattern2.png);
+
 }
 
 body {
-    background-image: url(../img/comppattern2.png);
+
     background-repeat: repeat;
+    height: 100%;
+
 }
 
 .gradient {
@@ -23,9 +27,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7eff3', endColorstr='#e7eff3', GradientType=1); /* IE6-9 */
 }
 
-#beforeFooter {
+.beforeFooter {
     min-height: 100%;
     margin: 0 0 -81px;
+
 }
 
 /*Обертка, очистка float*/
@@ -45,7 +50,8 @@ body {
     background-color: #eff3f7;
     margin-bottom: 39px;
 }
-#header {
+
+.header {
     height: 116px;
     min-width: 970px;
     max-width: 1200px;
@@ -63,10 +69,17 @@ body {
 }
 
 .socialButtons {
+    margin: 0;
+    padding: 0;
+    min-width: 260px;
+}
+
+.header .socialButtons {
     position: absolute;
     right: 0;
     margin: 0;
     padding: 0;
+
 }
 
 .socialItem {
@@ -151,61 +164,195 @@ ul.socialButtons {
 .asideBar {
     float: left;
     width: 250px;
-
-
 }
 
-.navigation{
-    margin-bottom: 26px;
-    border-radius: 10px;
+.navigation {
     overflow: hidden;
-}
-
-#main {
-    float: right;
-    width: 500px;
-}
-.menu-ul{
-    list-style:none;
+    border-radius: 4px;
+    margin-bottom: 26px;
     background-color: #eff3f7;
+
 }
 
-.menu-li{
+.menu-ul {
+    list-style: none;
+    background-color: #eff3f7;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-li {
     height: 76px;
-
+    margin: 0 11px;
+    border-top: 2px solid #3ba8c0;
 }
-.menu-a{
+
+.menu-li:first-child {
+    border-top: none;
+}
+
+.menu-a:hover {
+    color: #3ba8c0;
+}
+
+.menu-a {
     font-family: 'fira_sansbook';
-    display:block;
-    width:100%;
-    height: 100%;
+    display: block;
     text-decoration: none;
     font-size: 20px;
     padding: 20px 0;
+    color: #959aa8;
+    margin-left: 16px;
 }
 
+.selected {
+    background-color: #3ba8c0;
+    border-bottom: none;
+    padding-left: 11px;
+    margin: 0;
+    margin-bottom: -2px;
+    font-size: 22px;
+}
+
+.selected .menu-a:hover {
+    color: white;
+}
+
+.selected > a {
+    color: #f9fafb;
+}
+
+/* right right right right right right right right right right right right right right right */
+.main {
+    float: right;
+    width: 650px;
+}
+
+.rightArticle {
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-height: 234px;
+}
+
+.rightArticle h1 {
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #3ba8c0;
+    border-bottom: 2px solid #3ba8c0;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 23px;
+    padding: 13px 26px;
+}
+
+.wrapperMyPicture {
+    float: left;
+    margin-left: 55px;
+    margin-top: 20px;
+    margin-bottom: 30px; /*если текст справ от картинки будет меньше по высоте*/
+}
+
+.myPicture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    border: 5px solid #3ba8c0;
+}
+
+.mainInformation {
+    float: right;
+    min-width: 420px;
+}
+
+.myInfo {
+    margin: 0;
+    padding: 0;
+}
+
+.myInfoItem {
+    list-style: none;
+}
+
+.myInfoTitle, .myInfoText {
+    display: inline-block;
+}
+
+.myInfoTitle {
+    font-weight: 400;
+    font-family: "fira_sansmedium";
+    font-size: 16px;
+}
+
+.myInfoText {
+    padding-left: 25px;
+}
+
+.rightArticleWrapper {
+    padding: 0 10px 40px 0;
+}
+
+.rightArticleUl {
+    margin: 0 0 0 0;
+}
+
+.rightArticleLi {
+    padding-left: 76px;
+    list-style: none;
+    margin-bottom: 20px;
+    background-image: url("../img/portfel.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 50%;
+}
+
+
+
+.rightArticleLi:last-child {
+    margin-bottom: 0px;
+}
+
+.where {
+    font-family: 'fira_sansbook';
+    font-size: 16px;
+    font-family: 'fira_sansbook';
+}
+
+.period {
+    font-family: 'fira_sanslight';
+    font-size: 15px;
+    line-height: 1;
+}
 
 /* footer   footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  */
 
-#footer {
-
+.footer {
     height: 81px;
     background-color: #eff3f7;
+
 }
 
-#footer_in {
+.footer_in {
     height: 78px;
     width: 961px;
     margin: auto;
     background: url("../img/lock.png") no-repeat 35px 24px;
 }
 
-#copyright {
-    padding-top: 28px;
-    padding-left: 289px;
+.lock {
+    display: inline-block;
+    margin-left: 31px;
+    margin-top: 28px;
+    width: 50px;
+}
 
+.copyright {
+    display: inline-block;
+    padding-top: 28px;
+    padding-left: 206px;
     font: 12px Monospace;
     font-family: fira_sansbook, arial;
     color: #767d84;
-
 }
